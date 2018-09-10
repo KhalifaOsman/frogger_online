@@ -14,7 +14,7 @@ public:
 	bool IntersectsWith(SDL_Rect veichlePosition, bool isMosquito); // Função para detectar as colisões
 	SDL_Rect positionRect; // Retângulo da posição do jogador
 	int get_current_direction();
-
+	void set_current_frame(int frame);
 private:
 	SDL_Rect frogSize[4][5]; // Matriz dos retângulos de todos os estégios da aniumação do sapo
 	SDL_Rect cropRect; // Retângulo para o corte da animação
