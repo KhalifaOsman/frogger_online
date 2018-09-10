@@ -16,6 +16,8 @@ public:
 
 	bool ready;
 
+	int score;
+
 	int direction;
 
 	SDL_Rect position_rect;
