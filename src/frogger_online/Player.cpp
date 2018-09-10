@@ -287,6 +287,7 @@ bool Player::IntersectsWith(SDL_Rect veichlePosition, bool isMosquito)
 			positionRect.x = initialX;
 			positionRect.y = initialY;
 			currentDirection = initial_direction;
+			currentFrame = 0;
 			hasJumped = false;
 		}
 		return true; // Senão retorna verdade para collidiu
@@ -296,4 +297,8 @@ bool Player::IntersectsWith(SDL_Rect veichlePosition, bool isMosquito)
 int Player::get_current_direction()
 {
 	return this->currentDirection;
+}
+
+void Player::set_current_frame(int frame) {
+	this->currentFrame = frame;
 }
